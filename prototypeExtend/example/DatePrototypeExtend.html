@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/DatePrototypeExtend.js"></script>
+    <script src="../lib/date_zh-cn.js"></script>
+    <script>
+        var dtm = new Date("01/12/2008");
+        console.log(dtm.isLeapYear());
+
+        var dtm2 = new Date("01/12/2008");
+        console.log(dtm2.isWeekend());
+
+        var dtm3 = new Date("01/12/2008");
+        console.log(dtm3.isWeekDay());
+
+        var dtm4 = new Date();
+        console.log(dtm4.getDaysInMonth());
+
+        var dtm5 = new Date("01/12/2008");
+        console.log(dtm.getDayName());
+
+        var dtm6 = new Date("01/12/2008");
+        console.log(dtm.getDayName(true));
+
+        var dtm7 = new Date("01/12/2008");
+        console.log(dtm7.getMonthName());
+
+        var dtm8 = new Date("01/12/2008");
+        console.log(dtm8.getMonthName(true));
+
+        var dtm9 = new Date("12/12/2008");
+        console.log(dtm9.getDayOfYear());
+
+        var dtm10 = new Date();
+        console.log(dtm10.getWeekOfYear());
+
+        var dtm11 = new Date();
+        console.log(dtm11.setDayOfYear(1));
+
+        var dtm12 = new Date();
+        dtm12.addYears(2);
+        console.log(dtm12);
+
+        var dtm13 = new Date();
+        dtm13.addMonths(1);
+        console.log(dtm13);
+
+        var dtm14 = new Date();
+        dtm14.addDays(1);
+        console.log(dtm14);
+
+        var dtm15 = new Date();
+        dtm15.addHours(1);
+        console.log(dtm15);
+
+        var dtm16 = new Date();
+        dtm16.addMinutes(10);
+        console.log(dtm16);
+
+        var dtm17 = new Date();
+        console.log(dtm17.asString());
+
+        var dtm18 = Date.fromString("12/01/2008");
+        console.log(dtm18);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/StringPrototypeExtend.js"></script>
+    <script>
+        var str1 = " Hello Boys and Girls!   ".trim();
+        console.log(str1);
+
+        var str2 = "font-weight".camelize();
+        console.log(str2);
+        console.log("border_width_bottom".camelize());
+        console.log("border_width-bottom".camelize());
+        console.log("goldvein".startsWith("go"));
+        console.log("goldvein".startsWith("god"));
+        console.log("goldvein".startsWith("ld", 2));
+        console.log("goldvein".startsWith("old", 2));
+        console.log("goldvein".endsWith("ein"));
+        console.log("goldvein".endsWith("vei"));
+        console.log("thisistenc ".truncate(5));
+        console.log("thisistenc ".truncate(5, "x"));
+        console.log("<div id='hi'>Bla</div>".stripTags());
+        console.log("<div id='hi'><b>fuck </b><i>you</i></div>".stripTags());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

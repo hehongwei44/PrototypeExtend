@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/ArrayPrototypeExtend.js"></script>
+    <script>
+        var stuff = "";
+
+        ["foo", "bar"].forEach(function (element, index, obj) {
+            //console.log("element: " + element + " index: " + index);
+            stuff += element;
+        });
+
+        console.log(stuff);
+
+        var result = [12, 54, 18, 130, 44].every(function (element, index, array) {
+            return element >= 10;
+        });
+
+        var result2 = [2, 54, 8, 130, 44].every(function (element, index, array) {
+            return element >= 10;
+        });
+
+        console.log("result :" + result);
+        console.log("result2 " + result2);
+
+        var result3 = [12, 5, 8, 1, 44].some(function (element, index, array) {
+            return element >= 10;
+        });
+        var result4 = [2, 5, 8, 1, 4].some(function (element, index, array) {
+            return element >= 10;
+        });
+        console.log("result3 " + result3);
+        console.log("result4 " + result4);
+
+        var arr1 = ["hello", "Array", "WORLD"].map(function (element, index, array) {
+            return element.toUpperCase();
+        });
+
+        var arr2 = [1, 4, 9].map(Math.sqrt);
+
+        var arr3 = [12, 5, 8, 1, 44].filter(function (element, index, array) {
+            return element >= 10;
+        });
+
+        console.log("arr1 " + arr1);
+        console.log("arr2 " + arr2);
+        console.log("arr3 " + arr3);
+
+        var index = [12, 5, 8, 5, 44].indexOf(5);
+        var index2 = [12, 5, 8, 5, 44].indexOf(5, 2);
+        console.log("index " + index);
+        console.log("index2 " + index2);
+
+        var arr4 = [1, 2, 1, 4, 5, 4].unique();
+        console.log("arr4 " + arr4);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
